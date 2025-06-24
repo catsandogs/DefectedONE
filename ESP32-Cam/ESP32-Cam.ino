@@ -41,11 +41,11 @@
 //#define CAMERA_MODEL_M5STACK_WIDE
 //#define CAMERA_MODEL_AI_THINKER
 
-// Wifi network station credentials "123456891" "79203753" "TP-Link_EB36"
-#define WIFI_SSID "Galaxy21A" 
-#define WIFI_PASSWORD "123456891"
+// Wifi network station credentials 
+#define WIFI_SSID "###" 
+#define WIFI_PASSWORD "###"
 // Telegram BOT Token (Get from Botfather)
-#define BOT_TOKEN "7337132420:AAHkNg0FeFhQ2w5zorl3D8c_EKDbevZMNSk"
+#define BOT_TOKEN "###"
 
 #define FLASH_LED_PIN 4
 
@@ -66,7 +66,7 @@ int getNextBufferLen();
 bool dataAvailable = false;
 
 void sendPhotoToChat() {
-  String chat_id = "-1002864902236"; // Ваш chat_id
+  String chat_id = "###"; // Ваш chat_id
   
   // 1. Отправляем фото
   fb = esp_camera_fb_get();
