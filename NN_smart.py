@@ -96,8 +96,7 @@ async def error_handler(update: object, context: ContextTypes.DEFAULT_TYPE) -> N
     logger.error(f'Update {update} вызвал ошибку: {context.error}')
 
 def main() -> None:
-    application = Application.builder().token("6774012378:AAE6PUiMZLsTs9VJW9JzKL-xztSO2WhK8qA").build() #7337132420:AAHkNg0FeFhQ2w5zorl3D8c_EKDbevZMNSk - esp
-#6774012378:AAE6PUiMZLsTs9VJW9JzKL-xztSO2WhK8qA
+    application = Application.builder().token("ТГ_ТОКЕН").build()
     application.add_handler(CommandHandler("start", start))
     application.add_handler(MessageHandler(filters.PHOTO & filters.ChatType.PRIVATE, handle_photo))
     application.add_handler(MessageHandler(filters.PHOTO & filters.ChatType.CHANNEL, handle_channel_photo))
